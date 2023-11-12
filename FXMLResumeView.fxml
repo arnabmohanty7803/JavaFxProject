@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="517.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ResViewController">
+   <children>
+      <TabPane prefHeight="418.0" prefWidth="625.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Personal Details">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Separator layoutX="-1.0" layoutY="171.0" prefHeight="23.0" prefWidth="638.0" />
+                        <TextField fx:id="firstName" layoutX="115.0" layoutY="37.0" prefHeight="27.0" prefWidth="176.0" />
+                        <TextField fx:id="lastName" layoutX="425.0" layoutY="37.0" prefHeight="27.0" prefWidth="176.0" />
+                        <Label layoutX="39.0" layoutY="42.0" text="First Name" />
+                        <Label layoutX="347.0" layoutY="42.0" text="Last Name" />
+                        <TextField fx:id="phone" layoutX="115.0" layoutY="96.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="27.0" prefWidth="176.0" />
+                        <Label layoutX="67.0" layoutY="101.0" text="Phone" />
+                        <TextField fx:id="email" layoutX="425.0" layoutY="96.0" prefHeight="27.0" prefWidth="176.0" />
+                        <Label layoutX="380.0" layoutY="101.0" text="Email" />
+                        <TextField fx:id="address" layoutX="110.0" layoutY="216.0" prefHeight="27.0" prefWidth="328.0" />
+                        <Label layoutX="47.0" layoutY="221.0" text="Address" />
+                        <TextField fx:id="city" layoutX="114.0" layoutY="272.0" prefHeight="27.0" prefWidth="205.0" />
+                        <Label layoutX="74.0" layoutY="277.0" text="City" />
+                        <TextField fx:id="state" layoutX="114.0" layoutY="329.0" prefHeight="27.0" prefWidth="73.0" />
+                        <Label layoutX="70.0" layoutY="334.0" text="State" />
+                        <TextField fx:id="zip" layoutX="262.0" layoutY="329.0" prefHeight="27.0" prefWidth="73.0" />
+                        <Label layoutX="225.0" layoutY="334.0" text="Zip" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Education">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutY="5.0" prefHeight="158.0" prefWidth="638.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                           <children>
+                              <Label layoutX="49.0" layoutY="14.0" text="School:" />
+                              <TextField fx:id="school1" layoutX="123.0" layoutY="9.0" prefHeight="27.0" prefWidth="223.0" />
+                              <Label layoutX="52.0" layoutY="61.0" text="Major:" />
+                              <TextField fx:id="major1" layoutX="123.0" layoutY="56.0" prefHeight="27.0" prefWidth="223.0" />
+                              <Label layoutX="30.0" layoutY="109.0" text="Attended:" />
+                              <DatePicker fx:id="dpA1" layoutX="123.0" layoutY="104.0" />
+                              <Label layoutX="356.0" layoutY="109.0" text="to" />
+                              <DatePicker fx:id="dpA2" layoutX="403.0" layoutY="104.0" />
+                              <Separator layoutX="81.0" layoutY="155.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                           </children></AnchorPane>
+                        <AnchorPane layoutY="163.0" prefHeight="158.0" prefWidth="638.0">
+                           <children>
+                              <Label layoutX="44.0" layoutY="14.0" text="School:" />
+                              <TextField fx:id="school2" layoutX="119.0" layoutY="9.0" prefHeight="27.0" prefWidth="223.0" />
+                              <Label layoutX="51.0" layoutY="61.0" text="Major:" />
+                              <TextField fx:id="major2" layoutX="119.0" layoutY="56.0" prefHeight="27.0" prefWidth="223.0" />
+                              <Label layoutX="29.0" layoutY="109.0" text="Attended:" />
+                              <DatePicker fx:id="dpB1" layoutX="119.0" layoutY="104.0" />
+                              <Label layoutX="361.0" layoutY="109.0" text="to" />
+                              <DatePicker fx:id="dpB2" layoutX="404.0" layoutY="104.0" />
+                              <Separator layoutX="93.0" layoutY="157.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutY="326.0" prefHeight="158.0" prefWidth="638.0">
+                           <children>
+                              <Label layoutX="44.0" layoutY="14.0" text="School:" />
+                              <TextField fx:id="school3" layoutX="118.0" layoutY="9.0" prefHeight="27.0" prefWidth="223.0" />
+                              <Label layoutX="51.0" layoutY="61.0" text="Major:" />
+                              <TextField fx:id="major3" layoutX="118.0" layoutY="56.0" prefHeight="27.0" prefWidth="223.0" />
+                              <Label layoutX="29.0" layoutY="109.0" text="Attended:" />
+                              <DatePicker fx:id="dpC1" layoutX="118.0" layoutY="104.0" />
+                              <Label layoutX="361.0" layoutY="109.0" text="to" />
+                              <DatePicker fx:id="dpC2" layoutX="406.0" layoutY="104.0" />
+                           </children>
+                        </AnchorPane>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Job History">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane prefHeight="145.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label layoutX="25.0" layoutY="28.0" text="Company: " />
+                              <TextField fx:id="job1" layoutX="98.0" layoutY="23.0" prefHeight="27.0" prefWidth="253.0" />
+                              <Label layoutX="32.0" layoutY="70.0" text="Position:" />
+                              <TextField fx:id="position1" layoutX="98.0" layoutY="65.0" prefHeight="27.0" prefWidth="253.0" />
+                              <Label layoutX="30.0" layoutY="108.0" text="Duration:" />
+                              <DatePicker fx:id="dpD1" layoutX="98.0" layoutY="103.0" />
+                              <DatePicker fx:id="dpD2" layoutX="364.0" layoutY="103.0" />
+                              <Label layoutX="319.0" layoutY="108.0" text="to" />
+                              <Separator layoutX="98.0" layoutY="147.0" prefHeight="3.0" prefWidth="537.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutY="145.0" prefHeight="145.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <Label layoutX="25.0" layoutY="28.0" text="Company: " />
+                              <TextField fx:id="job2" layoutX="98.0" layoutY="23.0" prefHeight="27.0" prefWidth="253.0" />
+                              <Label layoutX="32.0" layoutY="70.0" text="Position:" />
+                              <TextField fx:id="position2" layoutX="98.0" layoutY="65.0" prefHeight="27.0" prefWidth="253.0" />
+                              <Label layoutX="30.0" layoutY="108.0" text="Duration:" />
+                              <DatePicker fx:id="dpE1" layoutX="98.0" layoutY="103.0" />
+                              <DatePicker fx:id="dpE2" layoutX="364.0" layoutY="103.0" />
+                              <Label layoutX="319.0" layoutY="108.0" text="to" />
+                              <Separator layoutX="14.0" layoutY="144.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutY="290.0" prefHeight="145.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <Label layoutX="25.0" layoutY="28.0" text="Company: " />
+                              <TextField fx:id="job3" layoutX="98.0" layoutY="23.0" prefHeight="27.0" prefWidth="253.0" />
+                              <Label layoutX="32.0" layoutY="70.0" text="Position:" />
+                              <TextField fx:id="position3" layoutX="98.0" layoutY="65.0" prefHeight="27.0" prefWidth="253.0" />
+                              <Label layoutX="30.0" layoutY="108.0" text="Duration:" />
+                              <DatePicker fx:id="dpF1" layoutX="98.0" layoutY="103.0" />
+                              <DatePicker fx:id="dpF2" layoutX="364.0" layoutY="103.0" />
+                              <Label layoutX="319.0" layoutY="108.0" text="to" />
+                           </children>
+                        </AnchorPane>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Skills &amp; Certifications">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutY="-7.0" prefHeight="249.0" prefWidth="638.0" AnchorPane.bottomAnchor="242.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <Label layoutX="35.0" layoutY="14.0" text="Skills: " />
+                              <TextField fx:id="skill1" layoutX="35.0" layoutY="51.0" prefHeight="27.0" prefWidth="225.0" />
+                              <TextField fx:id="skill2" layoutX="35.0" layoutY="100.0" prefHeight="27.0" prefWidth="225.0" />
+                              <TextField fx:id="skill3" layoutX="35.0" layoutY="152.0" prefHeight="27.0" prefWidth="225.0" />
+                              <Separator layoutX="-26.0" layoutY="232.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutY="255.0" prefHeight="229.0" prefWidth="638.0">
+                           <children>
+                              <Label layoutX="29.0" layoutY="14.0" text="Certifications:" />
+                              <TextField fx:id="cert1" layoutX="36.0" layoutY="43.0" prefHeight="27.0" prefWidth="345.0" />
+                              <TextField fx:id="cert2" layoutX="36.0" layoutY="89.0" prefHeight="27.0" prefWidth="345.0" />
+                              <TextField fx:id="cert3" layoutX="36.0" layoutY="133.0" prefHeight="27.0" prefWidth="345.0" />
+                           </children>
+                        </AnchorPane>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+          <Tab text="Resume">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="output" layoutX="7.0" layoutY="54.0" prefHeight="396.0" prefWidth="638.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0" />
+                        <Button fx:id="generateResume" layoutX="170.0" layoutY="14.0" mnemonicParsing="false" onAction="#handle" text="Generate Resume" />
+                        <Button layoutX="356.0" layoutY="14.0" mnemonicParsing="false" onAction="#handle2" text="Export" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
